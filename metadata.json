@@ -1,0 +1,8 @@
+{
+  "name": "Remix: متجر حسين NAT",
+  "description": "متجر حسين NAT للخدمات الرقمية وشحن ألعاب (ببجي، فري فاير، فيفا) وخدمات الواتساب والتصميم الجرافيكي.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

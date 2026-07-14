@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Cairo", ui-sans-serif, system-ui, sans-serif;
+  
+  /* Brand color definitions (Black and Gold theme) */
+  --color-gold-primary: #D4AF37;
+  --color-gold-secondary: #C5A028;
+  --color-gold-light: #F3E5AB;
+  --color-gold-dark: #9A7B1C;
+  --color-gold-glow: rgba(212, 175, 55, 0.45);
+  
+  --color-dark-bg: #070708;
+  --color-dark-card: #121215;
+  --color-dark-surface: #1B1B20;
+  --color-dark-border: rgba(212, 175, 55, 0.15);
+  
+  --color-brand-whatsapp: #25D366;
+  --color-brand-telegram: #0088cc;
+  --color-brand-phone: #E2B13C;
+}
+
+body {
+  background-color: var(--color-dark-bg);
+  color: #ffffff;
+  overflow-x: hidden;
+  font-family: var(--font-sans);
+}
+
+/* Custom Scrollbar for mobile/web frame view */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--color-gold-primary);
+  border-radius: 99px;
+}
+
+/* Metallic gold shining text effect */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #FFF 0%, #D4AF37 40%, #AA7C11 70%, #F3E5AB 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Golden button shine transition */
+.btn-gold-gradient {
+  background: linear-gradient(135deg, #D4AF37 0%, #AA7C11 100%);
+  color: #070708;
+  font-weight: 800;
+  box-shadow: 0 4px 20px rgba(212, 175, 55, 0.25);
+  transition: all 0.3s ease;
+}
+
+.btn-gold-gradient:hover {
+  background: linear-gradient(135deg, #F3E5AB 0%, #D4AF37 100%);
+  box-shadow: 0 6px 25px rgba(212, 175, 55, 0.4);
+  transform: translateY(-2px);
+}
+
+.btn-gold-gradient:active {
+  transform: translateY(0);
+}
+
+/* Golden reflection overlay */
+.gold-glow-border {
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.05);
+}
+
+.gold-glow-border:hover {
+  border-color: rgba(212, 175, 55, 0.5);
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.15);
+}
